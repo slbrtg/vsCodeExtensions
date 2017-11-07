@@ -1,0 +1,105 @@
+{
+  "ngFor": {
+    "prefix": "ag-NgFor",
+    "body": [
+      "*ngFor=\"let ${item} of ${list}\""
+    ],
+    "description": "Angular *ngFor snippet"
+  },
+  
+  "ngIf": {
+    "prefix": "ag-NgIf",
+    "body": [
+      "*ngIf=\"${expression}\""
+    ],
+    "description": "Angular *ngIf snippet"
+  },
+  
+  "ngSwitch": {
+    "prefix": "ag-NgSwitch",
+    "body": [
+      "<div [ngSwitch]=\"${conditionExpression}\">",
+      "\t<div *ngSwitchWhen=\"${expression}\">${output}</div>",
+      "\t<div *ngSwitchDefault>${output2}</div>",
+      "</div>"
+    ],
+    "description": "Angular [ngSwitch] snippet"
+  },
+  
+  "ngClass": {
+    "prefix": "ag-NgClass",
+    "body": [
+      "[ngClass]=\"{${cssClass}: ${expression}}\""
+    ],
+    "description": "Angular [ngClass] snippet"
+  },
+  
+  "class": {
+    "prefix": "ag-ClassBinding",
+    "body": [
+      "[class]=\"${expression}\""
+    ],
+    "description": "Angular [class] binding snippet"
+  },
+  
+  "style": {
+    "prefix": "ag-StyleBinding",
+    "body": [
+      "[style.${property}]=\"${expression}\""
+    ],
+    "description": "Angular [style] binding snippet"
+  },
+  
+  "ngStyle": {
+    "prefix": "ag-NgStyle",
+    "body": [
+      "[ngStyle]=\"{${style}: ${expression}}\""
+    ],
+    "description": "Angular [ngStyle] snippet"
+  },
+  
+  "ngModel": {
+    "prefix": "ag-NgModel",
+    "body": [
+      "[(ngModel)]=\"${binding}\""
+    ],
+    "description": "Angular [(ngModel)] snippet"
+  },
+  
+  "ngForm": {
+    "prefix": "ag-NgForm",
+    "body": [
+      "<form #${templateVariableName}=\"ngForm\" (ngSubmit)=\"${functionName}\">",
+      "\t$0",
+      "</form>"
+    ],
+    "description": "Angular ngForm snippet"
+  },
+  
+  "ngSelect": {
+    "prefix": "ag-Select",
+    "body": [
+      "<select (change)=\"${changeFunction}($event)\">",
+      "\t<option *ngFor=\"let ${item} of ${list}\" [value]=\"${item}\" [selected]=\"${selectFunction}(${item})\">{{${item}}}</option>",
+      "</select>"
+    ],
+    "description": "Angular <select> control using *ngFor snippet"
+  },
+  
+  "ngRouterLink": {
+    "prefix": "ag-RouterLink",
+    "body": [
+      "routerLink=\"${routeName}\""
+    ],
+    "description": "Angular basic routerLink snippet"
+  },
+  
+  "ngRouterLinkWithParameter": {
+    "prefix": "ag-RouterLinkWithParameter",
+    "body": [
+      "[routerLink]=\"['${routePath}',${routeParameterValue}$0]\""
+    ],
+    "description": "Angular routerLink with a route parameter snippet"
+  }
+}
+
